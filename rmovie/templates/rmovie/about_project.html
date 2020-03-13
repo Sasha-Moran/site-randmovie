@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rmovie: about project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Наш файл стилей -->
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+
+    <header  class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="{% static 'img/logo.png' %}" alt="Rmovie" class="logo animated fadeInDown">
+                </div>
+                <div class="col-lg-6 ml-auto">
+                    <nav>
+                        <ul class="menu d-flex justify-content-center animated fadeInDown">
+                            <li class="menu__item">
+                                <a href="{% url 'start_page'%}">
+                                    Сайт проекта
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="{% url 'post_list' %}">
+                                    Блог лист
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <section  class="features">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="title">Всем привет!</h1>
+                  <div class="text_block">
+                    <p>Мы рады Вас видеть на нашем сайте. Этот проект  находиться в <b>тестовом режиме!</b> Был создан с целью ускорить процесс поиска фильма для просмотра.
+                    Мы ценим Ваше время как своё, поэтому мы представляем Вам помощника для поиска фильмов.</p>
+                    <p>В ближайшем будущем планируется для улучшения поиска добавить фильтры за годом выпуска, жанром фильма и т.д.</p>
+                    <p>Наша база даных постоянно пополняется новыми фильмами. <b>Сейчас в нашей базе {{ movies }} фильмов.</b></p>
+                    <p>Приятного поиска)</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="credits">
+                        © By MORAN'S STUDIO.
+                        Update 2020.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

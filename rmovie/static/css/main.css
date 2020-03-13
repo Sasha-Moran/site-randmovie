@@ -1,0 +1,195 @@
+/* Спецификация */
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #fff
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.title__main {
+    font-size: 32px;
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+
+/* Первый экран */
+
+header {
+    background: url(../img/bg.jpeg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.menu {
+    margin-top: 35px;
+}
+
+.menu__item {
+    margin: 0 20px;
+}
+
+.menu__item a {
+    font-size: 16px;
+    color: #cccccc;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.offer {
+    margin-top: 117px;
+    text-align: center;
+}
+
+.offer__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.offer__intro {
+    font-size: 25px;
+    line-height: 1.1em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.button {
+    background: #fed136;
+    color: #484543;
+    border-radius: 3px;
+    display: block;
+    width: 240px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+/* Второй экран */
+
+.features {
+    background: #fafafa;
+}
+
+.img {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.movie {
+    margin-bottom: 65px;
+}
+
+.feature__title {
+    color: #000;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.link_to_movie {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.title__feature {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.title__main__feature {
+     font-size: 32px;
+     color: #000;
+}
+
+.feature__text {
+    color: #000;
+    text-align: justify;
+}
+
+.back {
+    padding-bottom: 30px;
+}
+
+/* Футер */
+
+.footer {
+    background: #000;
+    padding: 50px 0 50px;
+}
+
+.credits {
+    color: #fff;
+    font-size: 16px;
+    width: 185px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 992px) {
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+        margin: 20px auto;
+        width: auto;
+    }
+    .title__text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+        margin-bottom:10px;
+    }
+}

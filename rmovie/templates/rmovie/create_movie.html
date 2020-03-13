@@ -1,0 +1,23 @@
+{% extends 'Rsite/base_blog_style.html' %}
+
+{% block title1 %}Create movie{% endblock %}
+
+{% block title2 %}Create movie{% endblock %}
+
+
+{% block content %}
+<h3 align="right"><a href="/admin">Вернутся в админку</a></h3>
+<div class="container">
+<center><h2>Добавление нового фильма</h2></center>
+  <form  action="{% url 'create_movie_url' %}" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+    <h5>{{ field.label }}</h5>
+      {{ field }}
+    </div>
+    {% endfor %}
+    <center><button class="btn btn-primary" type="submit">Create</button></center>
+  </form>
+</div>
+{% endblock %}

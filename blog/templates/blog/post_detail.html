@@ -1,0 +1,14 @@
+{% extends 'blog/base_blog.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                <p>Опубликовано: {{ post.published_date }}</p>
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <a class="button" href="{% url 'post_list' %}">Назад</a>
+    </div>
+{% endblock %}
