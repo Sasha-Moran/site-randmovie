@@ -42,10 +42,16 @@ h2 {
 
 /* Первый экран */
 
-header {
+.header {
     background: url(../img/bg.jpeg) no-repeat center top / cover;
     height: 100vh;
 }
+
+.header__about {
+    background: #000;
+    padding-bottom: 15px;
+}
+
 
 .logo {
     margin-top: 20px;
