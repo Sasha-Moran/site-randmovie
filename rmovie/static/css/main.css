@@ -29,6 +29,14 @@ h2 {
     text-align: center;
 }
 
+.title__blog {
+  padding-top: 100px;
+  color: black;
+  padding-bottom: 70px;
+  text-align: center;
+
+}
+
 .title__main {
     font-size: 32px;
 }
