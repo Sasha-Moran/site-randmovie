@@ -1,5 +1,7 @@
 {% extends 'blog/base_blog.html' %}
 
+{% load bbcode_tags %}
+
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -8,7 +10,7 @@
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <a class="button" href="{% url 'post_list' %}">Назад</a>
+        <p>{% bbcode post.text %}</p>
+        <a class="btn button" href="{% url 'post_list' %}">Назад</a>
     </div>
 {% endblock %}

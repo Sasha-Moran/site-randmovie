@@ -1,4 +1,5 @@
 {% extends 'blog/base_blog.html' %}
+{% load bbcode_tags %}
 
 {% block content %}
     {% for post in posts %}
@@ -7,7 +8,7 @@
               <p>Опубликовано: {{ post.published_date }}</p>
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr|truncatewords:30}}
+            <p>{{ post.text|truncatewords:35|bbcode|safe}}
               <a href="{% url 'post_detail' pk=post.pk %}">
                 [Читать дальше]
               </a>

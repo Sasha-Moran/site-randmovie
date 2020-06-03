@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rmovie',
     'blog',
+    'precise_bbcode',
 ]
 
 MIDDLEWARE = [
