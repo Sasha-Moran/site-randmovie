@@ -25,7 +25,7 @@ SECRET_KEY = 'zg0dam!l4+otjxs6z&+ln3qb)f%4hy0wpd_(!yc#hi!)fpr6*k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', '.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rmovie.apps.RsiteConfig',
-    'blog.apps.BlogConfig',
+    'rmovie',
+    'blog',
     'precise_bbcode',
 ]
 
