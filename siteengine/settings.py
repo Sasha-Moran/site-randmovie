@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rmovie',
-    'blog',
+    'rmovie.apps.RsiteConfig',
+    'blog.apps.BlogConfig',
     'precise_bbcode',
 ]
 

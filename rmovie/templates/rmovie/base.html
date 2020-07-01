@@ -56,7 +56,7 @@
 								<div class="offer__intro">
 									Просто клинкни ниже.
 								</div>
-								<a class="btn button" href="{% url 'get_movie' %}">Хочу фильм</a>
+								<a class="btn button" id="ajax-text-me" onclick="slowScroll('#main')">Хочу фильм</a>
 							</div>
 						</div>
 					</div>
@@ -65,8 +65,8 @@
 		</header>
 	</div>
 
-	{% block content %}
-	{% endblock %}
+	<div id="main">
+	</div>
 
 	<footer id="footer" class="footer">
 		<div id="contacts">
@@ -82,25 +82,10 @@
 			</div>
 		</div>
 	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<script>
-	function slowScroll(id) {
-		$('html, body').animate({
-			scrollTop: $(id).offset().top
-		}, 500);
-	}
-
-	$(document).on("scroll", function () {
-		if($(window).scrollTop() === 0)
-		$("header").removeClass("fixed");
-		else
-		$("header").attr("class", "fixed");
-	});
-
-	{% block extrajs %}
-	{% endblock %}
-</script>
+	<script src="{% static 'js/ajax_function.js' %}"></script>
+	<script src="{% static 'js/scroll_function.js' %}"></script>
 
 </body>
 </html>

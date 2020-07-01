@@ -3,14 +3,14 @@
 {% load bbcode_tags %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                <p>Опубликовано: {{ post.published_date }}</p>
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{% bbcode post.text %}</p>
-        <a class="btn button" href="{% url 'post_list' %}">Назад</a>
-    </div>
+<div class="post">
+  {% if post.published_date %}
+  <div class="date">
+    <p>Опубликовано: {{ post.published_date }}</p>
+  </div>
+  {% endif %}
+  <h1>{{ post.title }}</h1>
+  <p>{% bbcode post.text %}</p>
+  <a class="btn button" href="{% url 'post_list' %}">Назад</a>
+</div>
 {% endblock %}
