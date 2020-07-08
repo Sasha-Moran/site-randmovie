@@ -1,13 +1,10 @@
 from django.shortcuts import render
-from .models import Movie
 from django.views.generic import View
-from .forms import MovieForm
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import Http404, JsonResponse
 from django.template.loader import render_to_string
 import random
 
-# from .utils import OdjectDetailMixin
+from .models import Movie
 # from .imdb import imdb_rating
 
 

@@ -30,11 +30,14 @@ h2 {
 }
 
 .title__blog {
-  padding-top: 100px;
+  padding-top: 50px;
   color: black;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   text-align: center;
+}
 
+.text_block {
+  padding-bottom: 50px;
 }
 
 .title__main {
@@ -81,7 +84,7 @@ h2 {
 }
 
 .offer {
-    margin-top: 117px;
+    margin-top: 120px;
     text-align: center;
 }
 
@@ -114,18 +117,14 @@ h2 {
 }
 
 /* Второй экран */
-
-.features {
-    background: #fafafa;
-}
-
 .img {
     padding-bottom: 20px;
     text-align: center;
 }
 
 .movie {
-    margin-bottom: 65px;
+    padding-bottom: 65px;
+    /* background: black; */
 }
 
 .feature__title {
@@ -138,9 +137,8 @@ h2 {
 }
 
 .link_to_movie {
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
+  width: 200px;
+  /* text-transform: uppercase; */
 }
 
 .title__feature {
@@ -187,6 +185,7 @@ h2 {
         margin-top: 20px;
     }
     .offer {
+        margin-top: 60px;
         text-align: center;
     }
     .offer__text {

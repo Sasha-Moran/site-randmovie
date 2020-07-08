@@ -20,8 +20,8 @@
           <p><b>Жанр:</b> {{ movie.genre }} </p>
           <p><b>Год випуска:</b> {{ movie.year }} г.</p>
           <p><b>Рейтинг IMDb:</b> -- / 10</p>
-          <p><a class="link_to_movie" href="https://www.imdb.com/title/tt{{ movie.movie_id }}/"> <b>Больше на IMDb</b> </a></p>
-          <p><a class="link_to_movie" href="{{ movie.link }}"> <b>Смотреть трейлер</b> </a></p>
+          <p><a class="btn btn-success link_to_movie" href="https://www.imdb.com/title/tt{{ movie.movie_id }}/" target="_blank">Больше на IMDb</a></p>
+          <p><a class="btn btn-success link_to_movie " href="{{ movie.link }}" target="_blank">Смотреть трейлер</a></p>
         </div>
       </div>
 
