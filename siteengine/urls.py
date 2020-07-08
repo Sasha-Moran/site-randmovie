@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rmovie.views import about_project
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('rmovie.urls')),
     path('blog/', include('blog.urls')),
-    path('about_project/', about_project, name='about_project' )
+    path('api/', include('rmovieApi.urls')),
 ]
