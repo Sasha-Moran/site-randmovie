@@ -5,7 +5,7 @@
 # RandMovie
 This is web aplication who random offer movie. 
 It has main offer application, blog and simple API.
-The deployed project is available on link (RandMovie)[http://sashamoran.pythonanywhere.com].
+The deployed project is available on link [RandMovie](http://sashamoran.pythonanywhere.com).
 
 ## Get start
 1. Open terminal in directory in which you want copy application and launch next commands:
