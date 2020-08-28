@@ -3,7 +3,7 @@
 </p>  
 
 # RandMovie
-This is web aplication who random offer movie. 
+This is a web application who random offer movie.
 It has main offer application, blog and simple API.
 The deployed project is available on link [RandMovie](http://sashamoran.pythonanywhere.com).
 
@@ -12,6 +12,7 @@ The deployed project is available on link [RandMovie](http://sashamoran.pythonan
 
 ```
 git clone https://github.com/Sasha-Moran/my-site
+cd my-site
 python -m venv venv
 ```
 2. Active virtual enviroment (python venv\scripts\activate [Windows]) and launch next command:
@@ -29,7 +30,7 @@ After than you need to launch application type next command:
 python manage.py runserver
 ```
 
-And then you need type this in browser or click http://127.0.0.1:8000.
+And then you need type next link in browser or click on it http://127.0.0.1:8000.
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/250px-WWW_logo_by_Robert_Cailliau.svg.png">
