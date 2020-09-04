@@ -4,7 +4,7 @@
 
 # RandMovie
 This is a web application who random offer movie.
-It has main offer application, blog and simple API.
+It has main application, blog and simple API.
 The deployed project is available on link [RandMovie](http://sashamoran.pythonanywhere.com).
 
 ## Get start
